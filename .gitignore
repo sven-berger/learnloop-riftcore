@@ -7,3 +7,4 @@ package.json
 package-lock.json
 .DS_Store
 eslint.config.js
+/.vite
