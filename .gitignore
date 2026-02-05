@@ -8,3 +8,4 @@ package-lock.json
 .DS_Store
 eslint.config.js
 /.vite
+/dist
