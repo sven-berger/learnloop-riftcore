@@ -1,14 +1,16 @@
+import Box from "../Box";
+
 export default function Sidebar() {
   const sidebar: Record<string, string> = {
     Startseite: "/",
     "Über mich": "/about/profile/",
-    Test: "/test/",
+    Haushaltsbuch: "/accounting/",
   };
 
   return (
     <div className="min-h-full flex-1">
-      <div className="">
-        <aside className="bg-amber-400 rounded-3xl p-3">
+      <Box>
+        <aside>
           <nav>
             <ul className="space-y-2">
               {Object.entries(sidebar).map(([label, href]) => (
@@ -24,7 +26,7 @@ export default function Sidebar() {
             </ul>
           </nav>
         </aside>
-      </div>
+      </Box>
     </div>
   );
 }

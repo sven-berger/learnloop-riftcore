@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 // Startseite
 import Index from "./pages/Home";
-import Test from "./pages/Test";
+import Accounting from "./pages/Accounting";
 
 export function AppRoutes() {
   return (
@@ -11,7 +11,7 @@ export function AppRoutes() {
       {/* Startseite */}
       <Route path="/" element={<Index />} />
 
-      <Route path="/test/" element={<Test />} />
+      <Route path="accounting" element={<Accounting />} />
     </Routes>
   );
 }

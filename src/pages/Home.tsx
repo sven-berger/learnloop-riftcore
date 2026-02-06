@@ -1,6 +1,8 @@
+import Page from "../components/Page";
+
 export default function Home() {
   return (
-    <div className="min-h-full flex-7 rounded-2xl border border-gray-300 bg-slate-200 p-8">
+    <Page>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id deleniti
       voluptatem sunt amet cumque commodi illum, blanditiis non, quos
       consequuntur in provident corrupti aperiam ducimus magnam! Quae veniam
@@ -23,6 +25,6 @@ export default function Home() {
       excepturi optio assumenda ipsum sapiente dolorem dicta iure vero
       praesentium ex asperiores, possimus veniam ut magnam provident eos
       aliquid.
-    </div>
+    </Page>
   );
 }
