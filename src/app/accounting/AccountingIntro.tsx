@@ -1,12 +1,12 @@
 import GridLayout from "../../components/layout/GridLayout";
 import OverallBalance from "./OverallBalance";
-import MyForm from "./MyForm";
+import PostingForm from "./PostingForm";
 
 export default function AccountingIntro() {
   return (
     <>
       <GridLayout cols={2}>
-        <MyForm />
+        <PostingForm />
         <OverallBalance />
       </GridLayout>
     </>

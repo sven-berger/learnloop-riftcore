@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <div className="min-h-screen flex flex-col p-4">
       <Header />
-      <main className="flex flex-1 items-stretch gap-8 max-sm:flex-col">
+      <main className="flex flex-1 gap-8 max-sm:flex-col">
         <div className="flex-3">
           <AppRoutes />
         </div>

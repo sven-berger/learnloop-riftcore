@@ -45,7 +45,6 @@
 
 body {
   font-family: "Oswald", Helvetica, sans-serif;
-
   padding: 20px;
   font-weight: 300;
   font-size: 1.1rem;
@@ -55,4 +54,32 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-image: url("/images/bg.png");
+}
+
+
+
+.option input {
+  display: none;
+}
+
+.income {
+  background-color: #d4edda;
+  color:#3eba9b;
+}
+
+.expense {
+  background-color: #f8d7da;
+  color: #ec735d;
+}
+
+.option input:checked + .income {
+  background-color: #28a745;
+  color: #fff;
+  border: 1px solid green;
+}
+
+.option input:checked + .expense {
+  background-color: #dc3545;
+  color: #fff;
+  border: 1px solid red;
 }
