@@ -1,5 +1,6 @@
 import H2 from "../../components/H2";
 import Content from "../../components/Content";
+import Button from "../../components/buttons/Button";
 
 export default function PostingForm() {
   return (
@@ -53,12 +54,7 @@ export default function PostingForm() {
               />
             </label>
             <div className="flex">
-              <button
-                className="rounded-full bg-blue-500 p-4 text-white"
-                type="submit"
-              >
-                Hinzufügen
-              </button>
+              <Button children={undefined} text="Hinzufügen" />"
             </div>
           </form>
         </div>
