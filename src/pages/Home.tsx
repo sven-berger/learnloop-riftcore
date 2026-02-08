@@ -7,6 +7,9 @@ export default function Home() {
   return (
     <>
       <Content>
+        <div className="block">
+          <H2>Herzlich Willkommen auf RiftCore.de!</H2>
+        </div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id
         deleniti voluptatem sunt amet cumque commodi illum, blanditiis non, quos
         consequuntur in provident corrupti aperiam ducimus magnam! Quae veniam
