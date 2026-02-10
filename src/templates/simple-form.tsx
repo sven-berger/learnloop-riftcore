@@ -12,7 +12,7 @@ type Result = {
   finalNumber: number;
 };
 
-export default function Testpage() {
+export default function SimpleForm() {
   const [name, setName] = useState("");
   const [randomNumber, setRandomNumber] = useState("");
   const [multiplierType, setMultiplierType] = useState<MultiplierType>("2");

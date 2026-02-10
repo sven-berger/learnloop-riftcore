@@ -19,7 +19,7 @@ let favoriteColorMap = {
   green: "Grün",
 };
 
-export default function Test2() {
+export default function ExtendedForm() {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
@@ -40,7 +40,7 @@ export default function Test2() {
     (formData.favoriteColor === "ownColor" ? formData.ownColor.trim() : true) &&
     formData.yourNumber > 0;
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!isComplete) return;
 
