@@ -1,13 +1,13 @@
-import SidebarNavigation from "./SidebarBoxes/SidebarNavigation";
+import Navigation from "./Navigation/Navigation";
 import SidebarCounter from "./SidebarBoxes/SidebarCounter";
-import SidebarImages from "./SidebarBoxes/SidebarImages";
+import SidebarThatsMe from "./SidebarBoxes/SidebarThatsMe";
 
 export default function Sidebar() {
   return (
     <div className="min-h-full flex-1">
-      <SidebarNavigation />
+      <Navigation />
+      <SidebarThatsMe />
       <SidebarCounter />
-      <SidebarImages />
     </div>
   );
 }

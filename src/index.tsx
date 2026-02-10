@@ -9,7 +9,7 @@ export default function Index() {
 
       <main className="flex flex-1 gap-8 max-sm:flex-col">
         {/* Sidebar */}
-        <aside className="order-2 md:order-1">
+        <aside className="order-2 md:order-1 lg:w-110">
           <Sidebar />
         </aside>
 

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Content from "../components/Content";
 
 export default function MyForm() {
   const [inputs, setInputs] = useState({
@@ -29,40 +28,38 @@ export default function MyForm() {
 
   return (
     <>
-      <Content>
-        <form onSubmit={handleSubmit}>
-          <label>
-            My name is:
-            <input
-              type="text"
-              name="firstname"
-              value={inputs.firstname}
-              onChange={handleChange}
-            />
-          </label>
+      <form onSubmit={handleSubmit}>
+        <label>
+          My name is:
+          <input
+            type="text"
+            name="firstname"
+            value={inputs.firstname}
+            onChange={handleChange}
+          />
+        </label>
 
-          <p>I want a burger with:</p>
-          <label>
-            Tomato:
-            <input
-              type="checkbox"
-              name="tomato"
-              checked={inputs.tomato}
-              onChange={handleChange}
-            />
-          </label>
-          <label>
-            Onion:
-            <input
-              type="checkbox"
-              name="onion"
-              checked={inputs.onion}
-              onChange={handleChange}
-            />
-          </label>
-          <button type="submit">Submit</button>
-        </form>
-      </Content>
+        <p>I want a burger with:</p>
+        <label>
+          Tomato:
+          <input
+            type="checkbox"
+            name="tomato"
+            checked={inputs.tomato}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Onion:
+          <input
+            type="checkbox"
+            name="onion"
+            checked={inputs.onion}
+            onChange={handleChange}
+          />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </>
   );
 }
