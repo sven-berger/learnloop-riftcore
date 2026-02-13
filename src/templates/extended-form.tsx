@@ -13,7 +13,7 @@ type Summary = {
   yourNumber?: number;
 };
 
-let favoriteColorMap = {
+const favoriteColorMap = {
   blue: "Blau",
   red: "Rot",
   green: "Grün",
