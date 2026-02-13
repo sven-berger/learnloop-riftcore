@@ -15,6 +15,7 @@ export default function SidebarTemplates() {
           title="Erweitertes Formular"
           href="/templates/extended-form/"
         />
+        <NavigationLink title="Übung" href="/exercise/" />
       </Box>
     </>
   );

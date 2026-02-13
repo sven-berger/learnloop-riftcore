@@ -9,6 +9,7 @@ import Error404 from "./components/errors/Error404";
 import MovieDB from "./pages/MovieDB";
 import SimpleForm from "./templates/simple-form";
 import ExtendedForm from "./templates/extended-form";
+import ExercisePage from "./exercise/ExercisePage";
 
 export function AppRoutes() {
   return (
@@ -24,6 +25,7 @@ export function AppRoutes() {
       {/* Vorlagen (Templates) */}
       <Route path="/templates/simple-form/" element={<SimpleForm />} />
       <Route path="/templates/extended-form/" element={<ExtendedForm />} />
+      <Route path="/exercise/" element={<ExercisePage />} />
     </Routes>
   );
 }
