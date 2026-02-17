@@ -1,6 +1,6 @@
 interface GitHubProps {
   name?: string; // z.B. "Home"
-  type?: "page" | "component" | "exercise" | "templates";
+  type?: "page" | "component" | "exercise" | "templates" | "app"; // z.B. "page"
 }
 
 const BASE_URL =
@@ -11,6 +11,7 @@ const PATHS = {
   component: "components",
   exercise: "exercise",
   templates: "templates",
+  app: "app",
 };
 
 export default function GitHub({ name, type = "page" }: GitHubProps) {
@@ -22,13 +23,18 @@ export default function GitHub({ name, type = "page" }: GitHubProps) {
     : `${BASE_URL}/${folder}`;
 
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
-    >
-      {name ? `${name}.tsx` : "GitHub-Link"}
-    </a>
+    <>
+      <div className="mt-5 bg-white p-5 rounded-2xl border border-gray-300">
+        <p className="mb-3">Zur GitHub-Datei:</p>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-green-700 transition-color"
+        >
+          {name ? `${name}.tsx` : "GitHub-Link"}
+        </a>
+      </div>
+    </>
   );
 }

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Button from "../components/buttons/Button";
 import Content from "../components/Content";
+import GitHub from "../components/GitHub";
 
 type Summary = { number: number };
 
@@ -67,6 +68,7 @@ export default function LocalStorageExample() {
           <p>{summary.number}</p>
         </Content>
       )}
+      <GitHub name="LocalStorageExample" type="templates" />
     </>
   );
 }

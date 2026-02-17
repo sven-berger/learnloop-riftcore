@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import GridLayout from "../components/layout/GridLayout";
 import H2 from "../components/H2";
 import Button from "../components/buttons/ButtonURL";
+import GitHub from "../components/GitHub";
 
 export default function Home() {
   return (
@@ -84,6 +85,7 @@ export default function Home() {
           </Card>
         </div>
       </GridLayout>
+      <GitHub name="Home" type="page" />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../components/buttons/Button";
 import Content from "../components/Content";
+import GitHub from "../components/GitHub";
 
 type Summary = {
   startNumber: number;
@@ -135,6 +136,7 @@ export default function GuessTheNumber() {
           )}
         </>
       )}
+      <GitHub name="GuessTheNumber" type="exercise" />
     </>
   );
 }

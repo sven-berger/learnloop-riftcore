@@ -3,6 +3,7 @@ import Content from "../components/Content";
 import Card from "../components/Card";
 import GridLayout from "../components/layout/GridLayout";
 import H2 from "../components/H2";
+import GitHub from "../components/GitHub";
 
 type Movie = {
   backdrop_path: string;
@@ -88,6 +89,7 @@ export default function MovieDB() {
           />
         ))}
       </GridLayout>
+      <GitHub name="MovieDB" type="page" />
     </>
   );
 }
