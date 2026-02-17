@@ -1,6 +1,6 @@
 interface GitHubProps {
   name?: string; // z.B. "Home"
-  type?: "page" | "component" | "exercise" | "templates" | "app"; // z.B. "page"
+  type?: "page" | "component" | "exercise" | "templates" | "app";
 }
 
 const BASE_URL =
