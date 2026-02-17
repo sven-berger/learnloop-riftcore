@@ -1,6 +1,6 @@
 interface GitHubProps {
   name?: string; // z.B. "Home"
-  type?: "page" | "component";
+  type?: "page" | "component" | "exercise" | "templates";
 }
 
 const BASE_URL =
@@ -9,6 +9,8 @@ const BASE_URL =
 const PATHS = {
   page: "pages",
   component: "components",
+  exercise: "exercise",
+  templates: "templates",
 };
 
 export default function GitHub({ name, type = "page" }: GitHubProps) {

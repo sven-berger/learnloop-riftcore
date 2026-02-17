@@ -7,28 +7,40 @@ import Accounting from "./pages/Accounting";
 import Users from "./pages/Users";
 import Error404 from "./components/errors/Error404";
 import MovieDB from "./pages/MovieDB";
-import SimpleForm from "./templates/simple-form";
-import ExtendedForm from "./templates/extended-form";
-import ExercisePage from "./exercise/ExercisePage";
+
+import FormSubmitExample from "./templates/FormSubmitExample";
+import LocalStorageExample from "./templates/LocalStorageExample";
+import APIExample from "./templates/APIExercise";
+
 import GuessTheNumber from "./exercise/GuessTheNumber";
+import EntryPrices from "./exercise/EntryPrices";
+
 export function AppRoutes() {
   return (
     <Routes>
+      {/* Fehlerseiten */}
       <Route path="*" element={<Error404 />}></Route>
 
-      {/* Startseite */}
+      {/* Seiten */}
       <Route path="/" element={<Index />} />
       <Route path="accounting" element={<Accounting />} />
       <Route path="users" element={<Users />} />
       <Route path="moviedb" element={<MovieDB />} />
 
       {/* Vorlagen (Templates) */}
-      <Route path="/templates/simple-form/" element={<SimpleForm />} />
-      <Route path="/templates/extended-form/" element={<ExtendedForm />} />
+      <Route
+        path="/templates/FormSubmitExample/"
+        element={<FormSubmitExample />}
+      />
+      <Route
+        path="/templates/LocalStorageExample/"
+        element={<LocalStorageExample />}
+      />
+      <Route path="/templates/APIExercise/" element={<APIExample />} />
 
       {/* Übung */}
-      <Route path="/exercise/" element={<ExercisePage />} />
       <Route path="/exercise/guess-the-number/" element={<GuessTheNumber />} />
+      <Route path="/exercise/entry-prices/" element={<EntryPrices />} />
     </Routes>
   );
 }

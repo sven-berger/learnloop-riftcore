@@ -8,14 +8,14 @@ export default function SidebarTemplates() {
       <Box>
         <H2 style="my-5">Vorlagen (Templates)</H2>
         <NavigationLink
-          title="Einfaches Formular"
-          href="/templates/simple-form/"
+          title="Formular Beispiel"
+          href="/templates/formSubmitExample/"
         />
         <NavigationLink
-          title="Erweitertes Formular"
-          href="/templates/extended-form/"
+          title="LocalStorage Beispiel"
+          href="/templates/localStorageExample/"
         />
-        <NavigationLink title="Übung" href="/exercise/" />
+        <NavigationLink title="API Beispiel" href="/templates/APIExercise/" />
       </Box>
     </>
   );

@@ -38,7 +38,7 @@ export default function APIExample() {
           ))}
         </ol>
       </Content>
-      <GitHub name="APIExercise" type="page" />
+      <GitHub name="APIExercise" type="exercise" />
     </>
   );
 }

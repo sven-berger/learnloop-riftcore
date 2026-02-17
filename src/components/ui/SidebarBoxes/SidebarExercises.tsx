@@ -11,6 +11,10 @@ export default function SidebarExercises() {
           title="Zahl erraten"
           href="/exercise/guess-the-number/"
         />
+        <NavigationLink
+          title="Eintrittspreise"
+          href="/exercise/entry-prices/"
+        />
       </Box>
     </>
   );

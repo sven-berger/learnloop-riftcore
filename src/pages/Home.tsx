@@ -3,7 +3,6 @@ import Card from "../components/Card";
 import GridLayout from "../components/layout/GridLayout";
 import H2 from "../components/H2";
 import Button from "../components/buttons/ButtonURL";
-import TestAPI from "../components/Test";
 
 export default function Home() {
   return (
@@ -35,10 +34,6 @@ export default function Home() {
         sapiente dolorem dicta iure vero praesentium ex asperiores, possimus
         veniam ut magnam provident eos aliquid.
       </Content>
-      <Content>
-        <TestAPI />
-      </Content>
-      <Content></Content>
       <H2 style="mt-10 mb-8">Meine aktuellen Kenntnisse</H2>
       <GridLayout cols={4}>
         <div>

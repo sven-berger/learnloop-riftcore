@@ -6,7 +6,7 @@ import Content from "../components/Content";
 
 type Summary = { number: number };
 
-export default function ExerciseForm() {
+export default function LocalStorageExample() {
   const [formData, setFormData] = useState({ number: 0 });
 
   const [summary, setSummary] = useState<Summary | null>(() => {
@@ -57,7 +57,7 @@ export default function ExerciseForm() {
           </label>
         </form>
 
-        <button type="button" onClick={handleClear} className="mt-4 underline">
+        <button type="button" onClick={handleClear} className="mt-4">
           LocalStorage löschen
         </button>
       </Content>
