@@ -27,19 +27,20 @@ export default function FormSubmitExample() {
     about: "",
     favoriteColor: "",
     ownColor: "",
-    yourNumber: 0,
+    yourNumber: 1,
     finalNumber: 0,
   });
   const [summary, setSummary] = useState<Summary | null>(null);
 
   // Abgeleiteter State: Verhindert unnötige Variablen
-  const isComplete =
+  const isComplete = Boolean(
     formData.name.trim() &&
     formData.age &&
     formData.about.trim() &&
     formData.favoriteColor &&
     (formData.favoriteColor === "ownColor" ? formData.ownColor.trim() : true) &&
-    formData.yourNumber > 0;
+    formData.yourNumber > 0,
+  );
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -112,6 +113,9 @@ export default function FormSubmitExample() {
                 setFormData({ ...formData, favoriteColor: e.target.value })
               }
             >
+              <option value="" disabled>
+                Bitte wählen…
+              </option>
               <option value="red">Rot</option>
               <option value="blue">Blau</option>
               <option value="green">Grün</option>
@@ -135,7 +139,6 @@ export default function FormSubmitExample() {
             <input
               type="range"
               className="bg-white w-full p-4 border border-gray-200 rounded-2xl mt-3"
-              placeholder="Zahl zwischen 1 und 100"
               min="1"
               max="100"
               value={formData.yourNumber}
