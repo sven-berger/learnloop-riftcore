@@ -66,7 +66,7 @@ export default function FormSubmitExample() {
     <>
       <Content>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
+          <div className="mb-10">
             <label className="mb-3">Name:</label>
             <input
               type="text"
@@ -79,7 +79,7 @@ export default function FormSubmitExample() {
             />
           </div>
 
-          <div>
+          <div className="mb-10">
             <label className="mb-3">Alter:</label>
             <input
               type="number"
@@ -92,10 +92,10 @@ export default function FormSubmitExample() {
             />
           </div>
 
-          <div>
+          <div className="mb-10">
             <label className="mb-3">Erzähl mir etwas über dich..</label>
             <textarea
-              className="bg-white w-full p-4 border border-gray-200 rounded-2xl mt-3"
+              className="bg-white w-full p-4 border border-gray-200 rounded-2xl pt-6 pl-6 mt-3"
               value={formData.about}
               onChange={(e) =>
                 setFormData({ ...formData, about: e.target.value })
@@ -104,7 +104,7 @@ export default function FormSubmitExample() {
             />
           </div>
 
-          <div>
+          <div className="mb-10">
             <label className="mb-3">Was ist deine Lieblingsfarbe?</label>
             <select
               className="bg-white w-full p-4 border border-gray-200 rounded-2xl mt-3"
@@ -133,22 +133,26 @@ export default function FormSubmitExample() {
               />
             )}
           </div>
-
-          <div>
-            <label className="mb-3">Wähle eine Zahl zwischen 1 und 100</label>
-            <input
-              type="range"
-              className="bg-white w-full p-4 border border-gray-200 rounded-2xl mt-3"
-              min="1"
-              max="100"
-              value={formData.yourNumber}
-              onChange={(e) =>
-                setFormData({ ...formData, yourNumber: Number(e.target.value) })
-              }
-            />
-            <small className="text-gray-500">
-              Deine Zahl: {formData.yourNumber || 0}
-            </small>
+          <div className="mb-10">
+            <label>Wähle eine Zahl zwischen 1 und 100</label>
+            <div className="grid bg-white p-6 border border-gray-200 rounded-2xl mt-3">
+              <input
+                type="range"
+                className="pt-6"
+                min="1"
+                max="100"
+                value={formData.yourNumber}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    yourNumber: Number(e.target.value),
+                  })
+                }
+              />
+              <small className="text-gray-500">
+                Deine Zahl: {formData.yourNumber || 0}
+              </small>
+            </div>
           </div>
 
           <Button type="submit">Absenden</Button>
