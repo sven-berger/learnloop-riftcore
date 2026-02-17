@@ -25,7 +25,7 @@ export default function GitHub({ name, type = "page" }: GitHubProps) {
   return (
     <>
       <div className="mt-5 bg-white p-5 rounded-2xl border border-gray-300">
-        <p className="mb-3">Zur GitHub-Datei:</p>
+        <p className="mb-3">Zur veröffentlichten Datei auf GitHub:</p>
         <a
           href={href}
           target="_blank"
