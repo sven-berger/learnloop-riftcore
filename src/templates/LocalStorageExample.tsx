@@ -57,10 +57,16 @@ export default function LocalStorageExample() {
             <Button children={undefined} type="submit" text="Absenden" />
           </label>
         </form>
+      </Content>
 
-        <button type="button" onClick={handleClear} className="mt-4">
-          LocalStorage löschen
-        </button>
+      <Content>
+        <Button
+          children={undefined}
+          type="button"
+          text="LocalStorage löschen"
+          style="bg-red-700"
+          onClick={handleClear}
+        />
       </Content>
 
       {summary && (
