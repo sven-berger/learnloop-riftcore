@@ -13,9 +13,10 @@ const de_DE = {
     collectionAndStorageOfPersonalData:
       "Erhebung und Speicherung personenbezogener Daten",
     scriptsAndLibrariesUsed: "Verwendete Skripte und Bibliotheken",
-    cookiesSessionsTracking: "Cookies, Sessions & Tracking",
+    integrationExternalInterfaces: "Einbindung externer Schnittstellen (APIs)",
+    cookiesSessionsTracking: "Cookies, Sessions und Tracking",
     contact: "Kontaktaufnahme",
-    userRights: "Rechte der Nutzer",
+    userRights: "Rechte der betroffenen Personen",
   },
 };
 
