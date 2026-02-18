@@ -1,4 +1,3 @@
-
 interface ButtonProps {
   text?: string;
   style?: string;
@@ -8,6 +7,7 @@ interface ButtonProps {
 }
 
 export default function Button({
+  to,
   text,
   style,
   type = "submit",
@@ -15,14 +15,24 @@ export default function Button({
 }: ButtonProps) {
   const baseStyle = "text-white rounded-full p-4";
 
-  return (
-    <button
+  if (to) {
+    return (
       <a
-      onClick={onClick}
-      className={`${style ?? "bg-blue-500 text-black"} ${baseStyle} `}
-      type={type ?? "Absenden"}
-    >
+        href={to}
+        className={`${style ?? "bg-blue-500 text-black"} ${baseStyle}`}
+      >
+        {text ?? "Button-Verlinkung"}
       </a>
-    </button>
-  );
+    );
+  } else {
+    return (
+      <button
+        onClick={onClick}
+        className={`${style ?? "bg-blue-500 text-black"} ${baseStyle}`}
+        type={type ?? "button"}
+      >
+        {text ?? "Button-Verlinkung"}
+      </button>
+    );
+  }
 }
