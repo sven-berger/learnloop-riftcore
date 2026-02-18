@@ -91,7 +91,7 @@ export default function GuessTheNumber() {
                 setFormData({ ...formData, endNumber: e.target.value })
               }
             ></input>
-            <Button type="submit">Absenden</Button>
+            <Button type="submit" text="Absenden" />
           </form>
         </Content>
       )}

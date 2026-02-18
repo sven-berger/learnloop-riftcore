@@ -3,6 +3,7 @@ import Button from "../components/buttons/Button";
 import Content from "../components/Content";
 import H2 from "../components/H2";
 import GitHub from "../components/GitHub";
+import GridLayout from "../components/layout/GridLayout";
 
 type Summary = {
   finalNumber: number | undefined;
@@ -154,8 +155,7 @@ export default function FormSubmitExample() {
               </small>
             </div>
           </div>
-
-          <Button type="submit">Absenden</Button>
+          <Button type="submit" text="Absenden" />
         </form>
       </Content>
 
