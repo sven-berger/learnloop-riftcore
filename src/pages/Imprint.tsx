@@ -67,6 +67,32 @@ export default function Imprint() {
             <p dangerouslySetInnerHTML={{ __html: item.information }} />
           </div>
         ))}
+        {/* {imprint.map((item, index) => {
+          const sanitizedInfo = item.information
+            .replace(/<h2>(.*?)<\/h2>/g, "<h2>$1</h2>")
+            .replace(/<p>(.*?)<\/p>/g, "<p>$1</p>")
+            .replace(/<br\s*\/?>/g, "<br />");
+          return (
+            <div
+              key={index}
+              className="flex flex-col gap-2"
+              dangerouslySetInnerHTML={{ __html: sanitizedInfo }}
+            />
+          );
+        })} */}
+        <div>
+          {imprint.map((item, index) => (
+            // ...
+
+            <div key={index} className="flex flex-col gap-2">
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(item.information),
+                }}
+              />
+            </div>
+          ))}
+        </div>
       </Content>
 
       <GitHub name="Imprint" type="page" />
