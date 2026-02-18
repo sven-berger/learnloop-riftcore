@@ -1,7 +1,7 @@
 [
   {
     "name": "Sven Oliver Berger",
-    "address": ["Limburger Str. 30", "65510 Idstein"],
+    "adress": ["Limburger Str. 30", "65510 Idstein"],
     "phone": "+49 1511 9409788",
     "mail": "bergersvenoliver@gmail.com",
     "information": "<p>Dies ist ein nicht-kommerzielles, privates Projekt.</p><p>Die Inhalte dieser Website sind privater Natur und stellen keine journalistisch-redaktionellen Angebote dar.</p><br><p>Auf dieser Website stelle ich eigene Projekte vor, betreibe einen Blog und eine Datenbank mit selbst erlerntem Wissen.</p><p>Es erfolgt <span class=\"text-bold\">keine</span> Gewinnerzielungsabsicht mit <a href=\"/\">dieser Projektseite</a>.</p>"
