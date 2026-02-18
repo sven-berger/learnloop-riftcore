@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Content from "../components/Content";
 import GitHub from "../components/GitHub";
 import H2 from "../components/H2";
+import DOMPurify from "dompurify";
 
 type Imprint = {
   name: string;
@@ -62,11 +63,6 @@ export default function Imprint() {
       </Content>
       <Content>
         <H2>{t("imprint.moreInformation")}</H2>
-        {imprint.map((item, index) => (
-          <div key={index} className="flex flex-col gap-2">
-            <p dangerouslySetInnerHTML={{ __html: item.information }} />
-          </div>
-        ))}
         {/* {imprint.map((item, index) => {
           const sanitizedInfo = item.information
             .replace(/<h2>(.*?)<\/h2>/g, "<h2>$1</h2>")
