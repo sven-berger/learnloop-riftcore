@@ -2,7 +2,7 @@ import Content from "../components/Content";
 import Card from "../components/Card";
 import GridLayout from "../components/layout/GridLayout";
 import H2 from "../components/H2";
-import Button from "../components/buttons/ButtonURL";
+import Button from "../components/buttons/Button";
 import GitHub from "../components/GitHub";
 
 export default function Home() {
@@ -45,9 +45,8 @@ export default function Home() {
               <Button
                 to="/about/knowledge/#javascript"
                 style="bg-amber-400 text-black"
-              >
-                Mehr erfahren
-              </Button>
+                text="Mehr erfahren"
+              ></Button>
             </div>
           </Card>
         </div>
@@ -56,9 +55,11 @@ export default function Home() {
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
             <div className="mt-10 flex justify-end">
-              <Button to="/about/knowledge/#react" style="bg-sky-400">
-                Mehr erfahren
-              </Button>
+              <Button
+                to="/about/knowledge/#react"
+                style="bg-sky-400"
+                text="Mehr erfahren"
+              ></Button>
             </div>
           </Card>
         </div>
@@ -67,9 +68,11 @@ export default function Home() {
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
             <div className="mt-10 flex justify-end">
-              <Button to="/about/knowledge/#tailwind" style="bg-blue-500">
-                Mehr erfahren
-              </Button>
+              <Button
+                to="/about/knowledge/#tailwind"
+                style="bg-blue-500"
+                text="Mehr erfahren"
+              ></Button>
             </div>
           </Card>
         </div>
@@ -78,9 +81,11 @@ export default function Home() {
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
             <div className="mt-10 flex justify-end">
-              <Button to="/about/knowledge/#php" style="bg-indigo-500">
-                Mehr erfahren
-              </Button>
+              <Button
+                to="/about/knowledge/#php"
+                style="bg-indigo-500"
+                text="Mehr erfahren"
+              ></Button>
             </div>
           </Card>
         </div>

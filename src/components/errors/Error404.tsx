@@ -1,5 +1,5 @@
 import Page from "../Page";
-import ButtonURL from "../buttons/ButtonURL";
+import Button from "../buttons/Button";
 
 export default function Error404() {
   return (
@@ -17,7 +17,7 @@ export default function Error404() {
               The page you're looking for doesn't exist or has been moved.
             </p>
 
-            <ButtonURL children={undefined} text="Zurück zur Startseite" />
+            <Button text="Zurück zur Startseite" />
           </div>
         </div>
       </Page>

@@ -121,7 +121,7 @@ export default function PostingForm() {
               />
             </label>
             <div className="flex">
-              <Button children={undefined} text="Hinzufügen" />
+              <Button text="Hinzufügen" />
             </div>
           </form>
         </div>

@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <>
       <Box>
-        <H2 style="py-5" text="Navigation" children={undefined} />
+        <H2 style="py-5">Navigation</H2>
         <nav>
           <ul className="space-y-2 pt-5">
             <li>

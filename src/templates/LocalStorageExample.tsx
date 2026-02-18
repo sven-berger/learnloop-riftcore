@@ -54,14 +54,13 @@ export default function LocalStorageExample() {
               value={formData.number}
               onChange={(e) => setFormData({ number: Number(e.target.value) })}
             />
-            <Button children={undefined} type="submit" text="Absenden" />
+            <Button type="submit" text="Absenden" />
           </label>
         </form>
       </Content>
 
       <Content>
         <Button
-          children={undefined}
           type="button"
           text="LocalStorage löschen"
           style="bg-red-700"
