@@ -6,15 +6,6 @@ import H2 from "../components/H2";
 
 type Imprint = {
   name: string;
-  address: string[];
-  mail: string;
-  phone: string;
-  information: string;
-};
-
-type ImprintApi = {
-  name: string;
-  address?: string[] | string;
   adress?: string[] | string;
   mail: string;
   phone: string;
@@ -26,26 +17,16 @@ export default function Imprint() {
   const [imprint, setImprint] = useState<Imprint[]>([]);
 
   useEffect(() => {
-    async function fetchImprint() {
+    async function fetchUsers() {
       const res = await fetch("/json/Imprint.json");
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = (await res.json()) as ImprintApi[];
-      const normalized = json.map((item) => {
-        const rawAddress = item.address ?? item.adress ?? [];
-        const address = Array.isArray(rawAddress) ? rawAddress : [rawAddress];
-
-        return {
-          name: item.name,
-          address,
-          mail: item.mail,
-          phone: item.phone,
-          information: item.information,
-        } satisfies Imprint;
-      });
-      setImprint(normalized);
+      const json = (await res.json()) as Imprint[];
+      setImprint(json);
     }
-    fetchImprint();
+
+    fetchUsers();
   }, []);
+
   return (
     <>
       <Content>
@@ -60,9 +41,13 @@ export default function Imprint() {
               {t("imprint.address")}
             </dt>
             <dd>
-              {item.address.map((line, lineIndex) => (
-                <p key={lineIndex}>{line}</p>
-              ))}
+              {Array.isArray(item.adress) ? (
+                item.adress.map((line, lineIndex) => (
+                  <p key={lineIndex}>{line}</p>
+                ))
+              ) : (
+                <p>{item.adress}</p>
+              )}
             </dd>
             <dt className="text-green-700 font-bold my-5">
               {t("imprint.phone")}
