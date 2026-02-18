@@ -47,7 +47,7 @@ export default function Imprint() {
                   <p key={lineIndex}>{line}</p>
                 ))
               ) : (
-                <p>{item.adress}</p>
+                <p> {item.adress}</p>
               )}
             </dd>
             <dt className="text-green-700 font-bold my-5">
