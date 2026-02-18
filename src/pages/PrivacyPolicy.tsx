@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
   }, []);
 
   return (
-    <>
+    <div className="privacy-policy">
       <Content>
         <p
           dangerouslySetInnerHTML={{
@@ -101,6 +101,6 @@ export default function PrivacyPolicy() {
         />
       </Content>
       <GitHub name="PrivacyPolicy" type="page" />
-    </>
+    </div>
   );
 }

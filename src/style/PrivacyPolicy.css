@@ -1,23 +1,25 @@
-.label {
-  background-color: darkorange;
-  border-radius: 8px;
-  border: 2px solid darkgoldenrod;
-  padding: 5px;
-  color: white;
-  font-size: 13px;
-}
+.privacy-policy {
+  .label {
+    background-color: darkorange;
+    border-radius: 8px;
+    border: 2px solid darkgoldenrod;
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+  }
 
-.success {
-  background-color: green;
-  border: 2px solid darkgreen;
-}
+  .success {
+    background-color: green;
+    border: 2px solid darkgreen;
+  }
 
-ul {
-  margin-top: 30px;
-  list-style-type: disc;
-  padding-left: 20px;
-}
+  ul {
+    margin-top: 30px;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
 
-li {
-  margin-bottom: 20px;
+  li {
+    margin-bottom: 20px;
+  }
 }
