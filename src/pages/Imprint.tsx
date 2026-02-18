@@ -8,7 +8,7 @@ import DOMPurify from "dompurify";
 type Imprint = {
   name: string;
   adress?: string[] | string;
-  mail: string;
+  email: string;
   phone: string;
   information: string;
 };
@@ -57,7 +57,7 @@ export default function Imprint() {
             <dt className="text-green-700 font-bold my-5">
               {t("imprint.email")}
             </dt>
-            <dd>{item.mail}</dd>
+            <dd>{item.email}</dd>
           </dl>
         ))}
       </Content>
