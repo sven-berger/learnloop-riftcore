@@ -1,5 +1,5 @@
 import "./style/global.css";
-import "./i18n";
+import "./i18n.tsx";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
