@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Content from "../components/Content";
-import GitHub from "../components/GitHub";
+import Content from "../../components/Content";
+import GitHub from "../../components/GitHub";
 
 type Summary = {
   id: number;

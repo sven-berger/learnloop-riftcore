@@ -14,7 +14,7 @@ export default function Navigation() {
               <NavigationLink title="Über mich" href="/about/profile/" />
               <NavigationLink title="Haushaltsbuch" href="/accounting/" />
               <NavigationLink title="Filmdatenbank" href="/moviedb/" />
-              <hr className="my-4 border-gray-200" />
+              <hr className="my-4 border-gray-600" />
               <NavigationLink title="Impressum" href="/imprint/" />
               <NavigationLink title="Datenschutz" href="/privacy-policy/" />
             </li>
