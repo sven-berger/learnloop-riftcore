@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Button from "../components/buttons/Button";
-import Content from "../components/Content";
-import H2 from "../components/H2";
-import GitHub from "../components/GitHub";
+import Button from "../../components/buttons/Button";
+import Content from "../../components/Content";
+import H2 from "../../components/H2";
+import GitHub from "../../components/GitHub";
 
 type Summary = {
   finalNumber: number | undefined;

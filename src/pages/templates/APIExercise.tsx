@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Content from "../components/Content";
-import GitHub from "../components/GitHub";
+import Content from "../../components/Content";
+import GitHub from "../../components/GitHub";
 
 type User = {
   id: number;
   name: string;
 };
 
-export default function APIExample() {
+export default function APIExercise() {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {

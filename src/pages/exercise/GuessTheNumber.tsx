@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button from "../components/buttons/Button";
-import Content from "../components/Content";
-import GitHub from "../components/GitHub";
+import Button from "../../components/buttons/Button";
+import Content from "../../components/Content";
+import GitHub from "../../components/GitHub";
 
 type Summary = {
   startNumber: number;
