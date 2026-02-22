@@ -17,6 +17,10 @@ export default function Navigation() {
               <hr className="my-4 border-gray-200" />
               <NavigationLink title="Impressum" href="/imprint/" />
               <NavigationLink title="Datenschutz" href="/privacy-policy/" />
+              <NavigationLink
+                title="Nutzungsbedingungen"
+                href="/terms-of-use/"
+              />
             </li>
           </ul>
         </nav>

@@ -9,6 +9,7 @@ import Error404 from "./components/errors/Error404";
 import MovieDB from "./pages/MovieDB";
 import Imprint from "./pages/Imprint";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 
 import FormSubmitExample from "./templates/FormSubmitExample";
 import LocalStorageExample from "./templates/LocalStorageExample";
@@ -30,6 +31,7 @@ export function AppRoutes() {
       <Route path="moviedb" element={<MovieDB />} />
       <Route path="imprint" element={<Imprint />} />
       <Route path="privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="terms-of-use" element={<TermsOfUse />} />
 
       {/* Vorlagen (Templates) */}
       <Route

@@ -100,7 +100,7 @@ export default function Home() {
       <H2 style="mt-10 mb-8">Meine aktuellen Kenntnisse</H2>
       <GridLayout cols={4}>
         <div>
-          <Card image="/images/javascript.png" title="JavaScript">
+          <Card image="/images/javascript.webp" title="JavaScript">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
             <div className="mt-10 flex justify-end">
@@ -113,7 +113,7 @@ export default function Home() {
           </Card>
         </div>
         <div>
-          <Card image="/images/react.png" title="React">
+          <Card image="/images/react.webp" title="React">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
             <div className="mt-10 flex justify-end">
@@ -126,7 +126,7 @@ export default function Home() {
           </Card>
         </div>
         <div>
-          <Card image="/images/html-css.png" title="Tailwind">
+          <Card image="/images/html-css.webp" title="Tailwind">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
             <div className="mt-10 flex justify-end">
@@ -139,7 +139,7 @@ export default function Home() {
           </Card>
         </div>
         <div>
-          <Card image="/images/php.png" title="PHP">
+          <Card image="/images/php.webp" title="PHP">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
             <div className="mt-10 flex justify-end">
