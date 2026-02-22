@@ -18,13 +18,13 @@ export default function OverallBalance() {
           <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 mt-3">
             <dt className="text-gray-500 font-weight bold">Bilanz #1</dt>
             <dd>
-              <span className="rounded-full font-medium bg-green-700 px-3 text-white">
+              <span className="rounded-2xl font-medium bg-green-700 px-3 text-white">
                 0,00€
               </span>
             </dd>
             <dt className="text-gray-500 font-weight bold">Bilanz #2</dt>
             <dd>
-              <span className="rounded-full font-medium bg-red-700 px-3 text-white">
+              <span className="rounded-2xl font-medium bg-red-700 px-3 text-white">
                 0,00€
               </span>
             </dd>

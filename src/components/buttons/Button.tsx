@@ -13,7 +13,7 @@ export default function Button({
   type = "submit",
   onClick,
 }: ButtonProps) {
-  const baseStyle = "text-white rounded-full p-4";
+  const baseStyle = "text-white rounded-2xl p-4";
 
   if (to) {
     return (
