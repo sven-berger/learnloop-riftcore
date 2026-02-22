@@ -7,14 +7,14 @@ export default function Index() {
     <div className="min-h-screen flex flex-col p-4">
       <Header />
 
-      <main className="flex flex-1 gap-8 max-sm:flex-col">
+      <main className="flex flex-1 gap-8 flex-col md:flex-row">
         {/* Sidebar */}
-        <aside className="order-2 md:order-1 lg:w-110">
+        <aside className="order-2 md:order-1 min-w-0 lg:w-110">
           <Sidebar />
         </aside>
 
         {/* Content */}
-        <section className="order-1 md:order-2 flex-1">
+        <section className="order-1 md:order-2 flex-1 min-w-0">
           <AppRoutes />
         </section>
       </main>

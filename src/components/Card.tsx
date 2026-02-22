@@ -20,7 +20,7 @@ export default function Card({
         alt={title ?? "Platzhalter"}
         className="rounded-t-lg mb-4 w-full object-fill h-55"
       />
-      <div className="pl-6 pr-6 pb-6">
+      <div className="p-4 sm:px-6 sm:pb-6">
         <h5 className="mb-2 text-2xl text-gray-900">
           {title ?? "Noteworthy technology acquisitions 2021"}
         </h5>
