@@ -1,12 +1,18 @@
 # Node
 node_modules/
-dist/
+
+# Build with Vite
+dist
+
 # Logs
 *.log
+
 # OS
 .DS_Store
 Thumbs.db
+
 # Env
 .env
 
+# Git
 /.idea
